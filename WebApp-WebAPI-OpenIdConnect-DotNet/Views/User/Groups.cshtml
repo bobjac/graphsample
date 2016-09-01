@@ -1,0 +1,13 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "User";
+}
+
+<h3>User Groups</h3>
+
+@foreach(var current in Model )
+{
+    <li>Group Name: @current</li>
+}
+

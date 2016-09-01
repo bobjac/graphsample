@@ -1,0 +1,12 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Files";
+}
+
+<h3>User Files</h3>
+
+@foreach (var current in Model.files)
+{
+    <li>Files URI: @current</li>
+}

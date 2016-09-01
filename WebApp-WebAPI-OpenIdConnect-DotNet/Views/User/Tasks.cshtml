@@ -1,0 +1,14 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Tasks";
+}
+
+<h3>User Tasks</h3>
+
+@foreach (var current in Model)
+{
+    <li>Task @current.taskId ::: @current.taskName</li>
+}
+
+@Html.ActionLink("Create Task", "CreateTask")

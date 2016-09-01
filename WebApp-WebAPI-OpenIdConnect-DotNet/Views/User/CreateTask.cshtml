@@ -1,0 +1,15 @@
+﻿@model TodoListWebApp.Models.Task
+
+@{
+    ViewBag.Title = "Create The Task";
+}
+
+Time to create a task
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.EditorFor(m => m.TaskName)
+    </div>
+    <input type="submit" value="Create" class="btn btn-default" />
+}
